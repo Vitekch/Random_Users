@@ -11,7 +11,7 @@ class UserList extends React.Component{
 
 
     render(){
-            const user_list= this.props.users.results.map((user,key)=>{ return <div class="col-lg-3"><UserCard user={user}/></div>})
+            const user_list= this.props.users.results.map((user,key)=>{ return <div class="col-lg-3" ><UserCard user={user} id={'usr_'+Math.floor(Math.random()*100000)} /></div>})
             
             return(
                 <div class="container List">
